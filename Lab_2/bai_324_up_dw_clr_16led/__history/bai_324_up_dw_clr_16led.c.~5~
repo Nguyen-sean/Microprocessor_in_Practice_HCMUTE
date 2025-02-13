@@ -1,0 +1,39 @@
+
+#include "tv_kit_vdk_18f6722_all.c"
+
+unsigned int8 Led_state = 0;
+
+void b304_16led_phai_std_pst(usi16 dl)
+{
+    usi8 i; 
+    usi16 LP;
+    LP = 0;
+    for(i = 0; i < 16; i++)
+    {
+        LP = (LP << 1) + 1;
+        xuat_32led_don_2word(0, LP);
+        delay_ms(dl);
+    }
+    for(i = 0; i < 16; i++)
+    {
+        LP = (LP << 1);
+        xuat_32led_don_2word(0, LP);
+        delay_ms(dl);
+    }
+}
+
+void main()
+{
+   set_up_port();
+   xuat_32led_don_4byte(0,0,0,0);
+   //xuat_32led_don_2word(0, 0x1);
+   b304_16led_phai_std_pst(20);
+while(true){
+      if(!input(on))          {delay_ms(50);Led_state = 0x0f;}
+      else if(!input(inv))    {delay_ms(50);Led_state =~ Led_state;}
+      else if (!input(off))   {delay_ms(50);Led_state=0;}
+      
+  //xuat_32led_don_4byte(0,0,0,Led_state);
+  //xuat_32led_don_2word(0, Led_state);
+  }
+}

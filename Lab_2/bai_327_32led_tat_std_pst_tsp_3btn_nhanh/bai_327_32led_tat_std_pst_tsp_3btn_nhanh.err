@@ -1,0 +1,5 @@
+>>> Warning 205 "bai_327_32led_tat_std_pst_tsp_3btn_nhanh.c" Line 72(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "bai_327_32led_tat_std_pst_tsp_3btn_nhanh.c" Line 72(1,1): Condition always FALSE
+      Memory usage:   ROM=1%      RAM=2% - 2%
+      0 Errors,  2 Warnings.
+Build Successful.

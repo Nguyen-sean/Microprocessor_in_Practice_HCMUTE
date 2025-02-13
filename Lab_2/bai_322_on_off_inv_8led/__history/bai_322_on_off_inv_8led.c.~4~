@@ -1,0 +1,26 @@
+
+#include "tv_kit_vdk_18f6722_all.c"
+
+unsigned int8 Led_state = 0x0f;
+
+void main()
+{
+   set_up_port();
+   xuat_32led_don_4byte(0,0,0,0);
+while(true){
+   
+      while (input(on)){
+         xuat_32led_don_4byte(0,0,0,Led_state);
+      }
+       do{
+         if(!input(inv)){
+         Led_state = ~Led_state;
+           xuat_32led_don_4byte(0,0,0,Led_state); 
+         }
+      }
+      if (!input(off)){
+         xuat_32led_don_4byte(0,0,0,0);
+      }
+  
+  }
+}

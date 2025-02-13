@@ -1,0 +1,16 @@
+[PROJECT]
+Target=bai_327_32led_tat_std_pst_tsp_3btn_nhanh.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_327_32led_tat_std_pst_tsp_3btn_nhanh.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_327_32led_tat_std_pst_tsp_3btn_nhanh.c]
+Type=4
+[mru-list]
+1=bai_327_32led_tat_std_pst_tsp_3btn_nhanh.c
+[Units]
+Count=1
+1=bai_327_32led_tat_std_pst_tsp_3btn_nhanh (main)

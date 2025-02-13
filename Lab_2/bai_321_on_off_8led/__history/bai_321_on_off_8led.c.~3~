@@ -1,0 +1,17 @@
+#include <bai_321_on_off_8led.c>
+#include "tv_kit_vdk_18f6722_all.c"
+
+void main()
+{
+xuat_32led_don_4byte(0,0,0,0);
+while(true){
+      set_up_port();
+      if(input(ON)){
+         xuat_32led_don_4byte(0,0,0,0xFF);
+      }
+      else if (input(OFF)){
+         xuat_32led_don_4byte(0,0,0,0);
+      }
+  
+  }
+}

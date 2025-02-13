@@ -1,0 +1,22 @@
+[PROJECT]
+Target=bai_322_on_off_inv_8led.hex
+Processor_Text=PIC18F6722
+CCSVerions=5.015
+Compiler=PCH
+CCSVersion=5.015
+[Target Data]
+FileList=bai_322_on_off_inv_8led.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[C:\Users\cblng\OneDrive\HCMUTE\Second year of college\Ki 2\practic_microprosecor\Day_3\bai_322_on_off_inv_8led\bai_322_on_off_inv_8led]
+Type=4
+[mru-list]
+1=bai_322_on_off_inv_8led.c
+[Opened Files]
+1=bai_322_on_off_inv_8led.c
+2=
+[bai_322_on_off_inv_8led.c]
+Type=4
+[Units]
+Count=1
+1=bai_322_on_off_inv_8led (main)
